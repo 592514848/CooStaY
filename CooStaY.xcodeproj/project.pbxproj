@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1037AE751D00598A00BC869E /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1037AE741D00598A00BC869E /* HomePageViewController.m */; };
+		1037AE781D005BF400BC869E /* bg_test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1037AE771D005BF400BC869E /* bg_test1.png */; };
+		1037AE7C1D00610900BC869E /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1037AE7B1D00610900BC869E /* BaseButton.m */; };
 		10FA71B21CFF210300C62444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FA71B11CFF210300C62444 /* main.m */; };
 		10FA71B51CFF210300C62444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FA71B41CFF210300C62444 /* AppDelegate.m */; };
 		10FA71BD1CFF210300C62444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FA71BC1CFF210300C62444 /* Assets.xcassets */; };
@@ -56,6 +59,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1037AE731D00598A00BC869E /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		1037AE741D00598A00BC869E /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		1037AE771D005BF400BC869E /* bg_test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_test1.png; sourceTree = "<group>"; };
+		1037AE7A1D00610900BC869E /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
+		1037AE7B1D00610900BC869E /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
 		10FA71AD1CFF210300C62444 /* CooStaY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CooStaY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FA71B11CFF210300C62444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10FA71B31CFF210300C62444 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +164,72 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1037AE6D1D00596300BC869E /* HomePageModule */ = {
+			isa = PBXGroup;
+			children = (
+				1037AE6E1D00596300BC869E /* HomePage */,
+			);
+			path = HomePageModule;
+			sourceTree = "<group>";
+		};
+		1037AE6E1D00596300BC869E /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				1037AE6F1D00596300BC869E /* Controller */,
+				1037AE701D00596300BC869E /* Model */,
+				1037AE711D00596300BC869E /* Service */,
+				1037AE721D00596300BC869E /* View */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		1037AE6F1D00596300BC869E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1037AE731D00598A00BC869E /* HomePageViewController.h */,
+				1037AE741D00598A00BC869E /* HomePageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1037AE701D00596300BC869E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1037AE711D00596300BC869E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1037AE721D00596300BC869E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1037AE761D005BF400BC869E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				1037AE771D005BF400BC869E /* bg_test1.png */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		1037AE791D0060C100BC869E /* BaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				1037AE7A1D00610900BC869E /* BaseButton.h */,
+				1037AE7B1D00610900BC869E /* BaseButton.m */,
+			);
+			path = BaseButton;
+			sourceTree = "<group>";
+		};
 		10FA71A41CFF210200C62444 = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +255,10 @@
 		10FA71AF1CFF210300C62444 /* CooStaY */ = {
 			isa = PBXGroup;
 			children = (
-				10FA71E31CFF21D500C62444 /* BaseFramework */,
+				1037AE761D005BF400BC869E /* Test */,
 				10FA71F71CFF21D500C62444 /* Common */,
+				10FA71E31CFF21D500C62444 /* BaseFramework */,
+				1037AE6D1D00596300BC869E /* HomePageModule */,
 				10FA71B01CFF210300C62444 /* Supporting Files */,
 			);
 			path = CooStaY;
@@ -283,6 +359,7 @@
 		10FA71F71CFF21D500C62444 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1037AE791D0060C100BC869E /* BaseButton */,
 				10FA71F81CFF21D500C62444 /* BaseApplication */,
 				10FA71FB1CFF21D500C62444 /* BaseNetworkRequest */,
 				10FA71FE1CFF21D500C62444 /* BaseService */,
@@ -523,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FA71BD1CFF210300C62444 /* Assets.xcassets in Resources */,
+				1037AE781D005BF400BC869E /* bg_test1.png in Resources */,
 				10FA72271CFF21D500C62444 /* blueArrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +676,7 @@
 			files = (
 				10FA72251CFF21D500C62444 /* BaseTabBarController.m in Sources */,
 				10FA722A1CFF21D500C62444 /* BaseViewController.m in Sources */,
+				1037AE751D00598A00BC869E /* HomePageViewController.m in Sources */,
 				10FA72341CFF21D500C62444 /* NSString+DataFormat.m in Sources */,
 				10FA722D1CFF21D500C62444 /* BaseService.m in Sources */,
 				10FA71B51CFF210300C62444 /* AppDelegate.m in Sources */,
@@ -605,6 +684,7 @@
 				10FA723A1CFF21D500C62444 /* XZJActivityIndicatorView.m in Sources */,
 				10FA72391CFF21D500C62444 /* ToastView.m in Sources */,
 				10FA722F1CFF21D500C62444 /* BaseTextField.m in Sources */,
+				1037AE7C1D00610900BC869E /* BaseButton.m in Sources */,
 				10FA72311CFF21D500C62444 /* EmptyDataView.m in Sources */,
 				10FA71B21CFF210300C62444 /* main.m in Sources */,
 				10FA72361CFF21D500C62444 /* UIColor+SNFoundation.m in Sources */,

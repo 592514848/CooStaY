@@ -18,7 +18,7 @@
 #pragma mark - getters and setters
 - (EGORefreshTableHeaderView *)refreshHeaderView{
     if(!_refreshHeaderView){
-        _refreshHeaderView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f , -self.mainTableView.frame.size.height, self.mainTableView.frame.size.width, self.mainTableView.frame.size.height)];
+        _refreshHeaderView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f , - self.mainTableView.frame.size.height - 20.0f, self.mainTableView.frame.size.width, self.mainTableView.frame.size.height)];
         _refreshHeaderView.delegate = self;
     }
     return _refreshHeaderView;

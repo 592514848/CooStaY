@@ -6,7 +6,13 @@
 //  Copyright © 2016年 Xiong, ZIjun. All rights reserved.
 //
 
+#define kNavigationItem_width 80.0f
 #import "BaseViewController.h"
+
+@interface BaseViewController ()
+@property(nonatomic, strong) UILabel *titleLabel;
+@property(nonatomic, strong) UIButton *backButton;
+@end
 
 @implementation BaseViewController
 #pragma mark - getters and setters
@@ -18,47 +24,66 @@
     return _customerNavigationBar;
 }
 
+- (UIView *)navigationTitleView{
+    if(!_navigationTitleView){
+        _navigationTitleView = [[UIView alloc] initWithFrame: CGRectMake(kNavigationItem_width, STATUSBAR_HEIGHT, SCREEN_WIDTH - 2 * kNavigationItem_width, NAVIGATIONBAR_HEIGHT - STATUSBAR_HEIGHT)];
+        [_navigationTitleView setBackgroundColor: [UIColor redColor]];
+    }
+    return _navigationTitleView;
+}
+
+- (UILabel *)titleLabel{
+    if(!_titleLabel){
+        _titleLabel = [[UILabel alloc] init];
+    }
+    return _titleLabel;
+}
+
+- (UIButton *)backButton{
+    if(!_backButton){
+        _backButton = [[UIButton alloc] init];
+        [_backButton setImage: [UIImage imageNamed: @""] forState: UIControlStateNormal];
+    }
+    return _backButton;
+}
+
 - (UIImageView *)contentView{
     if(!_contentView){
         _contentView = [[UIImageView alloc] initWithFrame: [UIScreen mainScreen].bounds];
         [_contentView setImage: [UIImage imageNamed: @"bg_test1"]];
+        [_contentView setUserInteractionEnabled: YES];
     }
     return _contentView;
 }
 
-#pragma mark - load
+#pragma mark - init
 - (id)init{
     self = [super init];
     if(self){
-        /**
-         *  初始化当前视图的高度
-         */
+        //初始化当前viewController的高度
         self.contentHeight = (SCREEN_HEIGHT - NAVIGATIONBAR_HEIGHT);
     }
     return self;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    //
+    //隐藏默认的navigationBar
     [self.navigationController.navigationBar setHidden: YES];
-    //
-    [self.view addSubview: self.customerNavigationBar];
-    [self.view bringSubviewToFront: self.customerNavigationBar];
-    
+    //加载自定义的navigationBar
+    [self initWithNavigationBar];
 }
 
+- (void)initWithNavigationBar{
+    [self.view addSubview: self.customerNavigationBar];
+    [self.view bringSubviewToFront: self.customerNavigationBar];
+}
 
+#pragma mark - load
 - (void)viewDidLoad{
     [super viewDidLoad];
-    
-    [self.view insertSubview: self.contentView atIndex: 0];
-    
-    [self.view setBackgroundColor: [UIColor viewBackgroundColor]];
+    //加载viewController的ContentView(背景图片)
+    [self setView: self.contentView];
+    //状态栏样式
     [[UIApplication sharedApplication] setStatusBarStyle: UIStatusBarStyleLightContent];
-    [self.navigationController.navigationBar setBarStyle: UIBarStyleBlack];
-    /**
-     *  设置视图布局的起始点从navigationBar底部开始
-     */
-//    self.navigationController.navigationBar.translucent = NO;
 }
 @end

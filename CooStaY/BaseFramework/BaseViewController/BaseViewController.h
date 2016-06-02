@@ -15,8 +15,6 @@
 @property(nonatomic, strong) UIView *navigationRightView;
 @property(nonatomic, strong) UIImageView *contentView;
 
-/**
- *   当前视图的高度
- */
+//当前viewController可用的内容高度
 @property(nonatomic, assign) CGFloat contentHeight;
 @end

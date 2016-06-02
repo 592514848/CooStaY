@@ -25,6 +25,11 @@
 #define TABBAR_HEIGHT 49.0f
 
 /**
+ *  statusBar height
+ */
+#define STATUSBAR_HEIGHT 20.0f
+
+/**
  *  navitaionbar height
  */
 #define NAVIGATIONBAR_HEIGHT 64.0f
