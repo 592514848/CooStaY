@@ -10,6 +10,7 @@
 		1037AE751D00598A00BC869E /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1037AE741D00598A00BC869E /* HomePageViewController.m */; };
 		1037AE781D005BF400BC869E /* bg_test1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1037AE771D005BF400BC869E /* bg_test1.png */; };
 		1037AE7C1D00610900BC869E /* BaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1037AE7B1D00610900BC869E /* BaseButton.m */; };
+		1037AE861D05B33E00BC869E /* ic_login_username.png in Resources */ = {isa = PBXBuildFile; fileRef = 1037AE851D05B33E00BC869E /* ic_login_username.png */; };
 		10FA71B21CFF210300C62444 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FA71B11CFF210300C62444 /* main.m */; };
 		10FA71B51CFF210300C62444 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FA71B41CFF210300C62444 /* AppDelegate.m */; };
 		10FA71BD1CFF210300C62444 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10FA71BC1CFF210300C62444 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		1037AE771D005BF400BC869E /* bg_test1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_test1.png; sourceTree = "<group>"; };
 		1037AE7A1D00610900BC869E /* BaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseButton.h; sourceTree = "<group>"; };
 		1037AE7B1D00610900BC869E /* BaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseButton.m; sourceTree = "<group>"; };
+		1037AE851D05B33E00BC869E /* ic_login_username.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_login_username.png; sourceTree = "<group>"; };
 		10FA71AD1CFF210300C62444 /* CooStaY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CooStaY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10FA71B11CFF210300C62444 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10FA71B31CFF210300C62444 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -553,6 +555,7 @@
 		E7EF5B131D0573CA008A4663 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1037AE851D05B33E00BC869E /* ic_login_username.png */,
 				E7EF5B141D0573CA008A4663 /* ic_login_top.png */,
 			);
 			path = Resource;
@@ -691,6 +694,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1037AE861D05B33E00BC869E /* ic_login_username.png in Resources */,
 				10FA71BD1CFF210300C62444 /* Assets.xcassets in Resources */,
 				E7EF5B151D0573CA008A4663 /* ic_login_top.png in Resources */,
 				1037AE781D005BF400BC869E /* bg_test1.png in Resources */,

@@ -11,19 +11,15 @@
 #import "BaseTextField.h"
 
 @interface BaseTextField() <UITextFieldDelegate>
-@property(nonatomic, strong) UILabel *leftPaddingView;
 @property(nonatomic, strong) BaseTextFieldObject *textFieldObject;
 @property(nonatomic, strong) UIView *lineView;
 @end
 
 @implementation BaseTextField
 #pragma mark - getteres and setters
-- (UILabel *)leftPaddingView{
+- (UIView *)leftPaddingView{
     if(!_leftPaddingView){
-        _leftPaddingView = [[UILabel alloc] initWithFrame: CGRectMake(0.0f, 0.0f, LEFT_PADDING, LEFT_PADDING)];
-        [_leftPaddingView setTextAlignment: NSTextAlignmentCenter];
-        [_leftPaddingView setTextColor: [UIColor redColor]];
-        [_leftPaddingView setFont: [UIFont systemFontOfSize: 11.0f]];
+        _leftPaddingView = [[UIView alloc] init];
     }
     return _leftPaddingView;
 }
@@ -134,11 +130,11 @@
 - (void)setTextFiledRequest:(BOOL) isRequest{
     CGRect frame = self.leftPaddingView.frame;
     frame.size.height = self.frame.size.height;
-    [self.leftPaddingView setText: (isRequest ? @"*" : @"")];
 }
 
 
 - (void)drawRect:(CGRect)rect{
+    [self.leftPaddingView setFrame: CGRectMake(0.0f, 0.0f, rect.size.height, rect.size.height)];
     switch (self.style) {
         case 2:{
             [self.lineView setFrame: CGRectMake(0.0f, self.frame.size.height - 0.5f, self.frame.size.height, 0.5f)];

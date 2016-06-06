@@ -22,6 +22,7 @@ typedef enum {
  *  The text box style
  */
 @property (nonatomic, assign) BaseTextField_Style style;
+@property(nonatomic, strong) UIView *leftPaddingView;
 @property (nonatomic, assign) CGFloat cornerRadius;
 @property (nonatomic, assign) CGFloat borderWidth;
 @property (nonatomic, weak) id<BaseTextFieldObject_Delegate> baseDelegate;
