@@ -10,6 +10,13 @@
 #import "BaseNavigationController.h"
 @interface BaseTabBarController : UITabBarController
 
-- (void)dismissTabBar;
+
+/**
+ *  显示TabBar
+ */
 - (void)showTabBar;
+/**
+ *  隐藏TabBar
+ */
+- (void)dismissTabBar;
 @end

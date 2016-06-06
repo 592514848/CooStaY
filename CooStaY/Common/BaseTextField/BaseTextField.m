@@ -22,7 +22,7 @@
     if(!_leftPaddingView){
         _leftPaddingView = [[UILabel alloc] initWithFrame: CGRectMake(0.0f, 0.0f, LEFT_PADDING, LEFT_PADDING)];
         [_leftPaddingView setTextAlignment: NSTextAlignmentCenter];
-        [_leftPaddingView setTextColor: [UIColor textRedColor]];
+        [_leftPaddingView setTextColor: [UIColor redColor]];
         [_leftPaddingView setFont: [UIFont systemFontOfSize: 11.0f]];
     }
     return _leftPaddingView;

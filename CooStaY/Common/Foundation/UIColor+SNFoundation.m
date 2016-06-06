@@ -45,4 +45,17 @@
 	return [UIColor colorWithRGBHex:hexNum];
 }
 
+#pragma mark -
+#pragma mark 将16进制颜色转UIColor 并设置透明度
++ (UIColor *)colorWithRGBHex:(UInt32) hex alpha:(CGFloat) alpha
+{
+    int r = (hex >> 16) & 0xFF;
+    int g = (hex >> 8) & 0xFF;
+    int b = (hex) & 0xFF;
+    
+    return [UIColor colorWithRed:r / 255.0f
+                           green:g / 255.0f
+                            blue:b / 255.0f
+                           alpha: alpha];
+}
 @end

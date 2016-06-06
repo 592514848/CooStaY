@@ -19,10 +19,12 @@
 
 #undef	HEX_RGB
 #define HEX_RGB(V)		[UIColor colorWithRGBHex:V]
+#define HEX_RGB_Alpha(hex,a) [UIColor colorWithRGBHex:hex alpha:a]
 
 @interface UIColor (SNFoundation)
 
 + (UIColor *)colorWithRGBHex:(UInt32)hex;
 + (UIColor *)colorWithHexString:(NSString *)stringToConvert;
 
++ (UIColor *)colorWithRGBHex:(UInt32) hex alpha:(CGFloat) alpha;
 @end

@@ -28,7 +28,7 @@
 - (UIView *)tabBarMainView{
     if(!_tabBarMainView){
         _tabBarMainView = [[UIView alloc] initWithFrame: CGRectMake(0.0f, SCREEN_HEIGHT - TABBAR_HEIGHT, SCREEN_WIDTH, TABBAR_HEIGHT)];
-        [_tabBarMainView setBackgroundColor: [[UIColor alloc] initWithWhite: 0.9f alpha: 0.6f]];
+        [_tabBarMainView setBackgroundColor: [[UIColor alloc] initWithWhite: 1.0f alpha: 0.1f]];
     }
     return _tabBarMainView;
 }
@@ -37,10 +37,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    for(UIView *view in [self.view subviews])
-    {
-        if([view isKindOfClass: [UITabBar class]])
-        {
+    //隐藏原生TabBar
+    for(UIView *view in [self.view subviews]){
+        if([view isKindOfClass: [UITabBar class]]){
             [view setHidden: YES];
             break;
         }
@@ -49,6 +48,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    //加载自定义TabBar
     [self loadCustomerTabBar];
 }
 
@@ -108,15 +108,18 @@
     }
 }
 
-- (void)dismissTabBar{
-    [UIView animateWithDuration: 0.3f animations:^{
-        [self.tabBarMainView setTop_sd: SCREEN_HEIGHT];
-    }];
-}
-
+#pragma mark - public methods
+#pragma mark 显示TabBar
 - (void)showTabBar{
     [UIView animateWithDuration: 0.3f animations:^{
         [self.tabBarMainView setTop_sd: SCREEN_HEIGHT - TABBAR_HEIGHT];
+    }];
+}
+
+#pragma mark 隐藏TabBar
+- (void)dismissTabBar{
+    [UIView animateWithDuration: 0.3f animations:^{
+        [self.tabBarMainView setTop_sd: SCREEN_HEIGHT];
     }];
 }
 @end

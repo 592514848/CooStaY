@@ -15,10 +15,6 @@
     return HEX_RGB(0xf5f6f7);
 }
 
-#pragma mark - TThe default red background
-+(UIColor *)backgroundRedColor{
-    return HEX_RGB(0xff003a);
-}
 
 #pragma mark - theme color
 +(UIColor *)themeColor{
@@ -30,6 +26,7 @@
     return HEX_RGB(0x4f5051);
 }
 
+#pragma mark - The default font light black
 +(UIColor *)textLightBlackColor{
     return HEX_RGB(0x666666);
 }
@@ -44,29 +41,13 @@
     return HEX_RGB(0xafb0b1);
 }
 
-#pragma mark - The default font yellow
-+(UIColor *)textYellowColor{
-    return HEX_RGB(0xffaf00);
+#pragma mark - 白色字体
++(UIColor *)textWhiteColor{
+    return [[UIColor alloc] initWithWhite: 1.0f alpha: 0.6f];
 }
 
-#pragma mark - The default font blue
-+(UIColor *)textBlueColor{
-    return HEX_RGB(0x00cd96);
-}
-
-#pragma mark - The default font red
-+(UIColor *)textRedColor{
-    return HEX_RGB(0xff003a);
-}
-    
 #pragma mark - The default line gray color
 +(UIColor *)lineGrayColor{
     return HEX_RGB(0xefefef);
 }
-
-#pragma mark - The default line blue color
-+(UIColor *)lineBlueColor{
-    return HEX_RGB(0x9be2cc);
-}
-
 @end

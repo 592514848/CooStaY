@@ -17,14 +17,35 @@
 +(UIColor *)viewBackgroundColor;
 
 /**
- *  App default black color
+ *  theme color
+ *
+ *  @return UIColor
+ */
++(UIColor *)themeColor;
+
+/**
+ *  The default line gray color
+ *
+ *  @return UIColor
+ */
++(UIColor *)lineGrayColor;
+
+/**
+ *  The default font white
+ *
+ *  @return UIColor
+ */
++(UIColor *)textWhiteColor;
+
+/**
+ *  The default font Black
  *
  *  @return UIColor
  */
 +(UIColor *)textBlackColor;
 
 /**
- *  The default font gray
+ *  The default font light Black
  *
  *  @return UIColor
  */
@@ -38,55 +59,9 @@
 +(UIColor *)textGrayColor;
 
 /**
- *  The default font blue
- *
- *  @return UIColor
- */
-+(UIColor *)textBlueColor;
-
-/**
- *  The default line gray color
- *
- *  @return UIColor
- */
-+(UIColor *)lineGrayColor;
-
-    
-/**
- *  The default light gray color
+ *  The default font light gray
  *
  *  @return UIColor
  */
 +(UIColor *)textLightGrayColor;
-
-/**
- *  theme color
- *
- *  @return UIColor
- */
-+(UIColor *)themeColor;
-
-/**
- *  The default line blue color
- *
- *  @return UIColor
- */
-+(UIColor *)lineBlueColor;
-
-/**
- *  The default red background
- *
- *  @return UIColor
- */
-+(UIColor *)backgroundRedColor;
-
-/**
- *  The default font red
- *
- *  @return UIColor
- */
-+(UIColor *)textRedColor;
-
-#pragma mark - The default font yeellow
-+(UIColor *)textYellowColor;
 @end

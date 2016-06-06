@@ -39,6 +39,12 @@
 		10FA72391CFF21D500C62444 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FA72201CFF21D500C62444 /* ToastView.m */; };
 		10FA723A1CFF21D500C62444 /* XZJActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FA72231CFF21D500C62444 /* XZJActivityIndicatorView.m */; };
 		40CEC60281752B77A4EEC088 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24609694556BF695F4BA10F1 /* libPods.a */; };
+		E7EF5B0C1D056338008A4663 /* LoginNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B0B1D056338008A4663 /* LoginNavigationController.m */; };
+		E7EF5B0F1D056352008A4663 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B0E1D056352008A4663 /* LoginViewController.m */; };
+		E7EF5B121D0566CE008A4663 /* LoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B111D0566CE008A4663 /* LoginMainView.m */; };
+		E7EF5B151D0573CA008A4663 /* ic_login_top.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EF5B141D0573CA008A4663 /* ic_login_top.png */; };
+		E7EF5B1B1D057644008A4663 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B1A1D057644008A4663 /* SignUpViewController.m */; };
+		E7EF5B1E1D057657008A4663 /* SignUpMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B1D1D057657008A4663 /* SignUpMainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +133,17 @@
 		24609694556BF695F4BA10F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		89791C5FFDA761D03ED74CE6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D5BFEA6A9507D88F4A54B829 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E7EF5B0A1D056338008A4663 /* LoginNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginNavigationController.h; sourceTree = "<group>"; };
+		E7EF5B0B1D056338008A4663 /* LoginNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginNavigationController.m; sourceTree = "<group>"; };
+		E7EF5B0D1D056352008A4663 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E7EF5B0E1D056352008A4663 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E7EF5B101D0566CE008A4663 /* LoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginMainView.h; sourceTree = "<group>"; };
+		E7EF5B111D0566CE008A4663 /* LoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginMainView.m; sourceTree = "<group>"; };
+		E7EF5B141D0573CA008A4663 /* ic_login_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_login_top.png; sourceTree = "<group>"; };
+		E7EF5B191D057644008A4663 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		E7EF5B1A1D057644008A4663 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		E7EF5B1C1D057657008A4663 /* SignUpMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpMainView.h; sourceTree = "<group>"; };
+		E7EF5B1D1D057657008A4663 /* SignUpMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpMainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,7 +275,9 @@
 				1037AE761D005BF400BC869E /* Test */,
 				10FA71F71CFF21D500C62444 /* Common */,
 				10FA71E31CFF21D500C62444 /* BaseFramework */,
+				E7EF5B061D056314008A4663 /* LoginModule */,
 				1037AE6D1D00596300BC869E /* HomePageModule */,
+				E7EF5B131D0573CA008A4663 /* Resource */,
 				10FA71B01CFF210300C62444 /* Supporting Files */,
 			);
 			path = CooStaY;
@@ -493,6 +512,79 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7EF5B061D056314008A4663 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF5B071D056314008A4663 /* Login */,
+				E7EF5B161D05762B008A4663 /* SignUp */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		E7EF5B071D056314008A4663 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF5B081D056314008A4663 /* Controller */,
+				E7EF5B091D056314008A4663 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E7EF5B081D056314008A4663 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF5B0A1D056338008A4663 /* LoginNavigationController.h */,
+				E7EF5B0B1D056338008A4663 /* LoginNavigationController.m */,
+				E7EF5B0D1D056352008A4663 /* LoginViewController.h */,
+				E7EF5B0E1D056352008A4663 /* LoginViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7EF5B091D056314008A4663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF5B101D0566CE008A4663 /* LoginMainView.h */,
+				E7EF5B111D0566CE008A4663 /* LoginMainView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7EF5B131D0573CA008A4663 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF5B141D0573CA008A4663 /* ic_login_top.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		E7EF5B161D05762B008A4663 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF5B171D05762B008A4663 /* Controller */,
+				E7EF5B181D05762B008A4663 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		E7EF5B171D05762B008A4663 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF5B191D057644008A4663 /* SignUpViewController.h */,
+				E7EF5B1A1D057644008A4663 /* SignUpViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7EF5B181D05762B008A4663 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7EF5B1C1D057657008A4663 /* SignUpMainView.h */,
+				E7EF5B1D1D057657008A4663 /* SignUpMainView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -600,6 +692,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10FA71BD1CFF210300C62444 /* Assets.xcassets in Resources */,
+				E7EF5B151D0573CA008A4663 /* ic_login_top.png in Resources */,
 				1037AE781D005BF400BC869E /* bg_test1.png in Resources */,
 				10FA72271CFF21D500C62444 /* blueArrow.png in Resources */,
 			);
@@ -676,12 +769,15 @@
 			files = (
 				10FA72251CFF21D500C62444 /* BaseTabBarController.m in Sources */,
 				10FA722A1CFF21D500C62444 /* BaseViewController.m in Sources */,
+				E7EF5B1E1D057657008A4663 /* SignUpMainView.m in Sources */,
 				1037AE751D00598A00BC869E /* HomePageViewController.m in Sources */,
 				10FA72341CFF21D500C62444 /* NSString+DataFormat.m in Sources */,
+				E7EF5B0F1D056352008A4663 /* LoginViewController.m in Sources */,
 				10FA722D1CFF21D500C62444 /* BaseService.m in Sources */,
 				10FA71B51CFF210300C62444 /* AppDelegate.m in Sources */,
 				10FA72281CFF21D500C62444 /* EGORefreshTableFooterView.m in Sources */,
 				10FA723A1CFF21D500C62444 /* XZJActivityIndicatorView.m in Sources */,
+				E7EF5B121D0566CE008A4663 /* LoginMainView.m in Sources */,
 				10FA72391CFF21D500C62444 /* ToastView.m in Sources */,
 				10FA722F1CFF21D500C62444 /* BaseTextField.m in Sources */,
 				1037AE7C1D00610900BC869E /* BaseButton.m in Sources */,
@@ -691,12 +787,14 @@
 				10FA722E1CFF21D500C62444 /* BaseTableViewCellDTO.m in Sources */,
 				10FA722C1CFF21D500C62444 /* BaseNetworkRequest.m in Sources */,
 				10FA72241CFF21D500C62444 /* BaseNavigationController.m in Sources */,
+				E7EF5B0C1D056338008A4663 /* LoginNavigationController.m in Sources */,
 				10FA72331CFF21D500C62444 /* NSDictionary+ExFoundation.m in Sources */,
 				10FA72301CFF21D500C62444 /* BaseTextView.m in Sources */,
 				10FA72291CFF21D500C62444 /* EGORefreshTableHeaderView.m in Sources */,
 				10FA72261CFF21D500C62444 /* BaseTableViewController.m in Sources */,
 				10FA72321CFF21D500C62444 /* NSDate+ExFoundation.m in Sources */,
 				10FA72381CFF21D500C62444 /* UIView+ExFoundation.m in Sources */,
+				E7EF5B1B1D057644008A4663 /* SignUpViewController.m in Sources */,
 				10FA722B1CFF21D500C62444 /* BaseApplication.m in Sources */,
 				10FA72351CFF21D500C62444 /* UIColor+AppConfigColor.m in Sources */,
 				10FA72371CFF21D500C62444 /* UIImage+ExFoundation.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BaseTabBarController.h"
+#import "LoginNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +23,11 @@
     [self.window makeKeyAndVisible];
     
     
-    BaseTabBarController *rootVC = [[BaseTabBarController alloc] init];
-    [self.window setRootViewController: rootVC];
+//    BaseTabBarController *rootVC = [[BaseTabBarController alloc] init];
+//    [self.window setRootViewController: rootVC];
     
+    LoginNavigationController *loginNC = [[LoginNavigationController alloc] init];
+    [self.window setRootViewController: loginNC];
     return YES;
 }
 

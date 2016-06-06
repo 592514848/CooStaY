@@ -12,8 +12,12 @@
 - (instancetype) init{
     self = [super init];
     if(self){
-    
+        [self addTarget: self action: @selector(buttonTouchDown) forControlEvents: UIControlEventTouchDown];
     }
     return self;
+}
+
+- (void)buttonTouchDown{
+//    [self setBackgroundColor: [self.backgroundColor setStroke]];
 }
 @end
