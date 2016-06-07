@@ -40,12 +40,14 @@
 		10FA72391CFF21D500C62444 /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FA72201CFF21D500C62444 /* ToastView.m */; };
 		10FA723A1CFF21D500C62444 /* XZJActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FA72231CFF21D500C62444 /* XZJActivityIndicatorView.m */; };
 		40CEC60281752B77A4EEC088 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24609694556BF695F4BA10F1 /* libPods.a */; };
+		E79D7CCA1D06D2D50003E08E /* EmailSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D7CC61D06D2D50003E08E /* EmailSignUpViewController.m */; };
+		E79D7CCB1D06D2D50003E08E /* EmailSignUpMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D7CC91D06D2D50003E08E /* EmailSignUpMainView.m */; };
+		E79D7CD11D06D3C20003E08E /* PhoneSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D7CD01D06D3C20003E08E /* PhoneSignUpViewController.m */; };
+		E79D7CD41D06D3D10003E08E /* PhoneSignUpMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E79D7CD31D06D3D10003E08E /* PhoneSignUpMainView.m */; };
 		E7EF5B0C1D056338008A4663 /* LoginNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B0B1D056338008A4663 /* LoginNavigationController.m */; };
 		E7EF5B0F1D056352008A4663 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B0E1D056352008A4663 /* LoginViewController.m */; };
 		E7EF5B121D0566CE008A4663 /* LoginMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B111D0566CE008A4663 /* LoginMainView.m */; };
 		E7EF5B151D0573CA008A4663 /* ic_login_top.png in Resources */ = {isa = PBXBuildFile; fileRef = E7EF5B141D0573CA008A4663 /* ic_login_top.png */; };
-		E7EF5B1B1D057644008A4663 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B1A1D057644008A4663 /* SignUpViewController.m */; };
-		E7EF5B1E1D057657008A4663 /* SignUpMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EF5B1D1D057657008A4663 /* SignUpMainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,14 @@
 		24609694556BF695F4BA10F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		89791C5FFDA761D03ED74CE6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D5BFEA6A9507D88F4A54B829 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E79D7CC51D06D2D50003E08E /* EmailSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailSignUpViewController.h; sourceTree = "<group>"; };
+		E79D7CC61D06D2D50003E08E /* EmailSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailSignUpViewController.m; sourceTree = "<group>"; };
+		E79D7CC81D06D2D50003E08E /* EmailSignUpMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailSignUpMainView.h; sourceTree = "<group>"; };
+		E79D7CC91D06D2D50003E08E /* EmailSignUpMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailSignUpMainView.m; sourceTree = "<group>"; };
+		E79D7CCF1D06D3C20003E08E /* PhoneSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneSignUpViewController.h; sourceTree = "<group>"; };
+		E79D7CD01D06D3C20003E08E /* PhoneSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneSignUpViewController.m; sourceTree = "<group>"; };
+		E79D7CD21D06D3D10003E08E /* PhoneSignUpMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneSignUpMainView.h; sourceTree = "<group>"; };
+		E79D7CD31D06D3D10003E08E /* PhoneSignUpMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneSignUpMainView.m; sourceTree = "<group>"; };
 		E7EF5B0A1D056338008A4663 /* LoginNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginNavigationController.h; sourceTree = "<group>"; };
 		E7EF5B0B1D056338008A4663 /* LoginNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginNavigationController.m; sourceTree = "<group>"; };
 		E7EF5B0D1D056352008A4663 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -142,10 +152,6 @@
 		E7EF5B101D0566CE008A4663 /* LoginMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginMainView.h; sourceTree = "<group>"; };
 		E7EF5B111D0566CE008A4663 /* LoginMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginMainView.m; sourceTree = "<group>"; };
 		E7EF5B141D0573CA008A4663 /* ic_login_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_login_top.png; sourceTree = "<group>"; };
-		E7EF5B191D057644008A4663 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
-		E7EF5B1A1D057644008A4663 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		E7EF5B1C1D057657008A4663 /* SignUpMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpMainView.h; sourceTree = "<group>"; };
-		E7EF5B1D1D057657008A4663 /* SignUpMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpMainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -514,11 +520,66 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E79D7CC31D06D2D50003E08E /* EmailSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E79D7CC41D06D2D50003E08E /* Controller */,
+				E79D7CC71D06D2D50003E08E /* View */,
+			);
+			path = EmailSignUp;
+			sourceTree = "<group>";
+		};
+		E79D7CC41D06D2D50003E08E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E79D7CC51D06D2D50003E08E /* EmailSignUpViewController.h */,
+				E79D7CC61D06D2D50003E08E /* EmailSignUpViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E79D7CC71D06D2D50003E08E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E79D7CC81D06D2D50003E08E /* EmailSignUpMainView.h */,
+				E79D7CC91D06D2D50003E08E /* EmailSignUpMainView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E79D7CCC1D06D3A50003E08E /* PhoneSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E79D7CCD1D06D3A50003E08E /* Controller */,
+				E79D7CCE1D06D3A50003E08E /* View */,
+			);
+			path = PhoneSignUp;
+			sourceTree = "<group>";
+		};
+		E79D7CCD1D06D3A50003E08E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E79D7CCF1D06D3C20003E08E /* PhoneSignUpViewController.h */,
+				E79D7CD01D06D3C20003E08E /* PhoneSignUpViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E79D7CCE1D06D3A50003E08E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E79D7CD21D06D3D10003E08E /* PhoneSignUpMainView.h */,
+				E79D7CD31D06D3D10003E08E /* PhoneSignUpMainView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E7EF5B061D056314008A4663 /* LoginModule */ = {
 			isa = PBXGroup;
 			children = (
 				E7EF5B071D056314008A4663 /* Login */,
-				E7EF5B161D05762B008A4663 /* SignUp */,
+				E79D7CC31D06D2D50003E08E /* EmailSignUp */,
+				E79D7CCC1D06D3A50003E08E /* PhoneSignUp */,
 			);
 			path = LoginModule;
 			sourceTree = "<group>";
@@ -559,33 +620,6 @@
 				E7EF5B141D0573CA008A4663 /* ic_login_top.png */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		E7EF5B161D05762B008A4663 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				E7EF5B171D05762B008A4663 /* Controller */,
-				E7EF5B181D05762B008A4663 /* View */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
-		E7EF5B171D05762B008A4663 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				E7EF5B191D057644008A4663 /* SignUpViewController.h */,
-				E7EF5B1A1D057644008A4663 /* SignUpViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		E7EF5B181D05762B008A4663 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				E7EF5B1C1D057657008A4663 /* SignUpMainView.h */,
-				E7EF5B1D1D057657008A4663 /* SignUpMainView.m */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -773,9 +807,10 @@
 			files = (
 				10FA72251CFF21D500C62444 /* BaseTabBarController.m in Sources */,
 				10FA722A1CFF21D500C62444 /* BaseViewController.m in Sources */,
-				E7EF5B1E1D057657008A4663 /* SignUpMainView.m in Sources */,
+				E79D7CCB1D06D2D50003E08E /* EmailSignUpMainView.m in Sources */,
 				1037AE751D00598A00BC869E /* HomePageViewController.m in Sources */,
 				10FA72341CFF21D500C62444 /* NSString+DataFormat.m in Sources */,
+				E79D7CD11D06D3C20003E08E /* PhoneSignUpViewController.m in Sources */,
 				E7EF5B0F1D056352008A4663 /* LoginViewController.m in Sources */,
 				10FA722D1CFF21D500C62444 /* BaseService.m in Sources */,
 				10FA71B51CFF210300C62444 /* AppDelegate.m in Sources */,
@@ -791,6 +826,7 @@
 				10FA722E1CFF21D500C62444 /* BaseTableViewCellDTO.m in Sources */,
 				10FA722C1CFF21D500C62444 /* BaseNetworkRequest.m in Sources */,
 				10FA72241CFF21D500C62444 /* BaseNavigationController.m in Sources */,
+				E79D7CD41D06D3D10003E08E /* PhoneSignUpMainView.m in Sources */,
 				E7EF5B0C1D056338008A4663 /* LoginNavigationController.m in Sources */,
 				10FA72331CFF21D500C62444 /* NSDictionary+ExFoundation.m in Sources */,
 				10FA72301CFF21D500C62444 /* BaseTextView.m in Sources */,
@@ -798,7 +834,7 @@
 				10FA72261CFF21D500C62444 /* BaseTableViewController.m in Sources */,
 				10FA72321CFF21D500C62444 /* NSDate+ExFoundation.m in Sources */,
 				10FA72381CFF21D500C62444 /* UIView+ExFoundation.m in Sources */,
-				E7EF5B1B1D057644008A4663 /* SignUpViewController.m in Sources */,
+				E79D7CCA1D06D2D50003E08E /* EmailSignUpViewController.m in Sources */,
 				10FA722B1CFF21D500C62444 /* BaseApplication.m in Sources */,
 				10FA72351CFF21D500C62444 /* UIColor+AppConfigColor.m in Sources */,
 				10FA72371CFF21D500C62444 /* UIImage+ExFoundation.m in Sources */,

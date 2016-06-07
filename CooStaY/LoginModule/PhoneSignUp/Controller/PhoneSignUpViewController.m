@@ -1,23 +1,23 @@
 //
-//  SignUpViewController.m
+//  PhoneSignUpViewController.m
 //  CooStaY
 //
-//  Created by Xiong, Zijun on 6/6/16.
+//  Created by Xiong, Zijun on 6/7/16.
 //  Copyright © 2016 Youdar. All rights reserved.
 //
 
-#import "SignUpViewController.h"
-#import "SignUpMainView.h"
+#import "PhoneSignUpViewController.h"
+#import "PhoneSignUpMainView.h"
 
-@interface SignUpViewController ()
-@property(nonatomic, strong) SignUpMainView *mainView;
+@interface PhoneSignUpViewController ()
+@property(nonatomic, strong) PhoneSignUpMainView *mainView;
 @end
 
-@implementation SignUpViewController
+@implementation PhoneSignUpViewController
 #pragma mark - getteres and setters
-- (SignUpMainView *)mainView{
+- (PhoneSignUpMainView *)mainView{
     if(!_mainView){
-        _mainView = [[SignUpMainView alloc] init];
+        _mainView = [[PhoneSignUpMainView alloc] init];
     }
     return _mainView;
 }
@@ -32,5 +32,4 @@
     [super viewWillAppear:animated];
     [self.customerNavigationBar setHidden: YES];
 }
-
 @end

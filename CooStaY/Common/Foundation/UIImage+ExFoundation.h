@@ -10,13 +10,8 @@
 
 @interface UIImage (ExFoundation)
 
-/**
- *  The compressed images under 12M
- *
- *  @param image Will be compressed images
- *
- *  @return compressed image data
- */
++ (UIImage *)imageWithColor:(UIColor *)color;
+
 - (NSData *)compressedImgLess12M:(UIImage*)image;
 
 -(UIImage*)adjustImageWithScaleToSize:(CGSize)size;

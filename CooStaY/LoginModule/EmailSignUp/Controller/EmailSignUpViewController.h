@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface SignUpViewController : BaseViewController
+@interface EmailSignUpViewController : BaseViewController
 
 @end

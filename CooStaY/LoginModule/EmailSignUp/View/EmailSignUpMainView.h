@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SignUpMainView : UIView
-
+@interface EmailSignUpMainView : UIView
+@property(nonatomic, strong) void(^onPhoneRegisterClick)();
 @end

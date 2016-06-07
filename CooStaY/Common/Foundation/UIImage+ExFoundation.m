@@ -9,6 +9,20 @@
 #import "UIImage+ExFoundation.h"
 
 @implementation UIImage (ExFoundation)
+#pragma mark - color turn to image
++ (UIImage *)imageWithColor:(UIColor *)color {
+    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
 
 #pragma mark - The compressed images under 12M
 - (NSData *)compressedImgLess12M:(UIImage*)image{
@@ -23,7 +37,7 @@
 }
 
 #pragma mark adjust iamge size
--(UIImage*)adjustImageWithScaleToSize:(CGSize)size
+- (UIImage*)adjustImageWithScaleToSize:(CGSize)size
 {
     UIGraphicsBeginImageContext(size);
     [self drawInRect:CGRectMake(0, 0, size.width, size.height)];

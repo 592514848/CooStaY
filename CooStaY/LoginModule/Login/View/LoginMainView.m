@@ -57,15 +57,8 @@
 - (BaseButton *)localLoginButton{
     if(!_localLoginButton){
         _localLoginButton = [[BaseButton alloc] init];
-        [_localLoginButton.layer setCornerRadius: 5.0f];
-        [_localLoginButton .layer setMasksToBounds: YES];
-        [_localLoginButton.layer setBorderColor: [[UIColor alloc] initWithWhite: 0.9f alpha: 0.5f].CGColor];
-        ;
-        [_localLoginButton setBackgroundColor: [UIColor clearColor]];
+        [_localLoginButton setButtonStyle: kBaseButton_AlphaStyle];
         [_localLoginButton setTitle: @"登录" forState: UIControlStateNormal];
-        [_localLoginButton.titleLabel setFont: [UIFont systemFontOfSize: 15.0f]];
-        [_localLoginButton setTitleColor: [UIColor textWhiteColor] forState: UIControlStateNormal];
-        [_localLoginButton.layer setBorderWidth: 1.0f];
     }
     return _localLoginButton;
 }
@@ -73,15 +66,8 @@
 - (BaseButton *)registerButton{
     if(!_registerButton){
         _registerButton = [[BaseButton alloc] init];
-        [_registerButton.layer setCornerRadius: 5.0f];
-        [_registerButton .layer setMasksToBounds: YES];
-        [_registerButton.layer setBorderColor: [[UIColor alloc] initWithWhite: 0.9f alpha: 0.5f].CGColor];
-        ;
-        [_registerButton setBackgroundColor: [UIColor clearColor]];
+        [_registerButton setButtonStyle: kBaseButton_AlphaStyle];
         [_registerButton setTitle: @"注册" forState: UIControlStateNormal];
-        [_registerButton.titleLabel setFont: [UIFont systemFontOfSize: 15.0f]];
-        [_registerButton setTitleColor: [UIColor textWhiteColor] forState: UIControlStateNormal];
-        [_registerButton.layer setBorderWidth: 1.0f];
         [_registerButton addTarget: self action: @selector(registerButtonClick:) forControlEvents: UIControlEventTouchUpInside];
     }
     return _registerButton;

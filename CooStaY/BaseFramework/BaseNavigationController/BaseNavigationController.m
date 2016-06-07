@@ -112,6 +112,7 @@
             [self.lastScreenShotView removeFromSuperview];
         UIImage *lastScreenShot = [self.screenShotsList lastObject];
         self.lastScreenShotView = [[UIImageView alloc] initWithImage: lastScreenShot];
+        [self.lastScreenShotView setFrame: CGRectMake(-SCREEN_WIDTH / 2.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT)];
         [self.backgroundView insertSubview: self.lastScreenShotView belowSubview: self.maskView];
     }
     else if(sender.state == UIGestureRecognizerStateEnded){
@@ -157,22 +158,27 @@
 #pragma mark Move to the specified coordinates x
 - (void)moveViewToX:(float) origin_x
 {
+    NSLog(@"%f", origin_x);
     origin_x = origin_x > self.view.frame.size.width ? self.view.frame.size.height : origin_x;
     origin_x = origin_x < 0.0f ? 0.0f : origin_x;
     
     CGRect frame = self.view.frame;
     frame.origin.x = origin_x;
     [self.view setFrame: frame];
-    /**
-     *  zooming value
-     */
-    float scale = (origin_x / 6400) + 0.95;
-    /**
-     *  alpha value
-     */
-    float alpha = 0.4 - (origin_x / 800);
-    [self.lastScreenShotView setTransform: CGAffineTransformMakeScale(scale, scale)];
-    [self.maskView setAlpha: alpha];
+
+//    //第一种效果
+//    float scale = (origin_x / 6400) + 0.95;
+//    float alpha = 0.4 - (origin_x / 800);
+//    [self.lastScreenShotView setTransform: CGAffineTransformMakeScale(scale, scale)];
+//    [self.maskView setAlpha: alpha];
+    
+    //第二种效果
+    [self.maskView setAlpha: 0];
+    if(origin_x > 0){
+        frame = self.lastScreenShotView.frame;
+        frame.origin.x = origin_x / 2.0f - SCREEN_WIDTH / 2.0f;
+        [self.lastScreenShotView setFrame: frame];
+    }
 }
 
 #pragma mark - The conversion of a UIView into a UIImage and realize the screenshots

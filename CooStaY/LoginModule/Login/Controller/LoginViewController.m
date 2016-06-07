@@ -8,7 +8,7 @@
 
 #import "LoginViewController.h"
 #import "LoginMainView.h"
-#import "SignUpViewController.h"
+#import "EmailSignUpViewController.h"
 
 @interface LoginViewController ()
 @property(nonatomic, strong) LoginMainView *mainView;
@@ -41,7 +41,7 @@
     WS(weakSelf);
     [self.mainView setOnRegisterButtonCLick:^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            SignUpViewController *signUpVC = [[SignUpViewController alloc] init];
+            EmailSignUpViewController *signUpVC = [[EmailSignUpViewController alloc] init];
             [weakSelf.navigationController pushViewController: signUpVC animated: YES];
         });
     }];
